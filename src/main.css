@@ -1,0 +1,48 @@
+:root{
+    /* 边框 */
+    --border-color:rgba(228, 215, 215, 1); 
+    --border:1px 1px solid var(--border-color);
+    /* 背景色 */
+    --home-bgcolor:rgba(233,214,214,1);
+    --bg-color:white;
+    --hover-bg-color:rgba(238, 220, 220, 0.8);
+    /* 文本 */
+    --default-iconSize:20px;
+    --font-color:rgb(167, 125, 125); 
+    /* 内边距 */
+    --padding:5px 5px 5px 5px;
+    --padding-column:10px 0 10px 0;
+    /* 外边距 */
+    --margin:5px 5px 5px 5px;
+    --margin-column:10px 0 10px 0;
+    /* 左边栏 */
+    --user-width:20vw;
+    /* 右边栏 */
+    --editor_width:80vw
+}
+*{
+    /* Text-size-adjust:none; */
+    /* css样式宽高包含边框的盒子 */
+    box-sizing: border-box;
+  }  
+#app{
+    background-color: var(--home-bgcolor);
+    padding:1px 1px 1px 1px;
+    overflow: hidden;
+    user-select: none;
+}  
+#flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rightMenu{
+    position: fixed;
+}
+#clickMenu{
+    position: absolute;
+}
+#contentFit{
+    width: fit-content;
+    height: fit-content;
+}
